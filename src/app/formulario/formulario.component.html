@@ -1,0 +1,12 @@
+<h3 class="text-center text-muted">Crear Formato</h3>
+<form-builder [form]="form" (change)="onChange($event)"></form-builder>
+<hr/>
+<h3 class="text-center text-muted">Json del Formato</h3>
+<div class="well jsonviewer">
+  <pre id="json"><code class="language-json" #json></code></pre>
+</div>
+<hr/>
+<h3 class="text-center text-muted">Formato Renderizado</h3>
+<div class="well jsonviewer">
+  <formio [form]="form" [refresh]="refreshForm"></formio>
+</div>
